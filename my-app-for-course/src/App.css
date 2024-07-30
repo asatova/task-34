@@ -13,6 +13,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .card_body {
   display: flex;
@@ -24,7 +25,7 @@ body {
   height: 420px;
   position: relative;
   border-radius: 12px;
-
+  transition: 0.15s linear;
 }
 .card_body:hover {
   background-color: #5ec1d4;
@@ -45,7 +46,8 @@ body {
   font-size: 14px;
 }
 .card{
-
+  max-width: 31%;
+ margin: 10px;
 }
 
 img {
@@ -80,5 +82,14 @@ img {
 }
 .card_price-off {
   position: absolute;
-  background-color: #ff24000;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  letter-spacing: 1.2px;
+  top: -15px;
+  right: -15px;
+  color: white;
 }

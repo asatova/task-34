@@ -3,16 +3,16 @@ import "../App.css"
 export default class Card extends Component {
 
     render() {
+        const {img, title, description,price, off} = this.props
         return (
             <div className="card">
                 <div className="card_body">
-                    <img src="https://www.pngplay.com/wp-content/uploads/12/Strawberry-Juice-Transparent-File.png" alt="image"/>
-                <h2 className="card_title">orange juice</h2>
-                <p className="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel </p>
-                    <p className="card_price">$5.03</p>
+                    <img src={img}/>
+                <h2 className="card_title">{title}</h2>
+                <p className="card_description">{description}</p>
+                    <p className="card_price">{price}</p>
                     <button className="card_btn">View product</button>
-                    <span className="card_price-off"> - % </span>
+                    <span className="card_price-off">{off}</span>
                 </div>
             </div>
         );
